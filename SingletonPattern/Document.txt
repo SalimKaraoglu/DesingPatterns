@@ -1,0 +1,13 @@
+﻿Singleton Pattern
+
+Yapı açısından singelton oldukça basittir bu özel bir örnekleme ve bu örnekleme başvurmayı sağlayan bir static yönteme sahip tek bir sınıftır. Ayrıca private bir constracter'a sahip olmalıdır Çünkü nesnenin dışarıdan üretileme prensibine dayanmaktadır. Singleton desenine esas amaç nesnenin her daim bir örneklem oluşturulması ve bu örneklem üzerinden bütün işlemin yapılmasıdır . Biraz daha açarsak nesnenin kullanım süresi boyunca bir kez oluşturulup bir daha oluşturulmaması üzerine kurulu bir mantığı vardır.
+  
+Singleton modelinin doğası onu uygulayan sınıfların bir uygulamanın ömrü boyunca herhangi bir zamanda sıfır yada bir olmasıdır. Singleton sınıfları parametresiz oluşturulur farklı parametrelere dayalı çeşitli benzer özelliklere ihtiyacınız varsa muhtemelen factory pattern'e ihtiyacınız vardır. Performans nedeniyle bu nesneler genellikle birşey onlardan talep edilinceye kadar oluşturulmazlar.Bu lazy initialization olarak bilinir ve bu kalıbın çoğu uygulaması tarafından varsayılan davranıştır. Ancak uygulama başladığında ihtiyacımız olan örneği basitce üretmek oluşturmak ve ardından bu örneği uygulamanın ömrü boyunca kullanmakta mümkündür. Singleton sınıflar tek özel parametresiz bir constractor'a sahip olmalıdır.
+
+Singleton a yapılan tek referans , singleton sınıfın karakateristik özelliği özel bir alanda olmasıdır. Uygulamanın geri kalanı sınıfın amac için gösterdiği genel bir static yöntem ile örneklenme erişir ve onu kullanır
+
+Singleton ile üretilmiş nesnelerin kendisine has karakteristik bir yaşam döngüsü vardır. Bu yüzden önümüze gelen nesneleri singleton ile üretmemeliyiz Singleton ile üretilen nesneler static sınıflar gibi ram üzerinde yaşam alanları biriciktir ram'in  heap alanında yaşarlar lakin projenin koştuğu server reset edilinceye kadar yaşarlar bu durum memory maliyeti olarak bize geri döner.
+
+Singleton bazı kaynaklarda anti-pattern olarak geçer. Bunun nedeni uygulandıkları bir arabirime iletmek yerine kod'da doğrudan static kullanıldıklarından sınıflar arasında tight couple ilişkiye sebebiyet verir Private consturaction ve statik yapıları yüzünden bağımlılık enjeksiyonuna(DI) uygun değildirler.Ayrıca bu modeli takip eden sınıflar gerçek işlerinin yanı sıra örnekleklem yaşam sürelerini yönetmekten sorumlu olacağından , endişelerin ayrılması prensibine (seperation of concerns)  prensibine ve tek sorumluluk ilkesine(Single Responsibity Principle(SIP)) ters düşmektedir Birden fazla singleton kullnacaksanız bu davranışı zorlamak için gereken tüm mantığı çoğaltmanız gerekecek. Bu da aynı zamanda kendinizi tekrar etmeniz (DRY => Dont repeat Yourself ) ilkesinide ihlal ettiğiniz anlamına gelir. 
+
+
