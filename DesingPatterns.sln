@@ -5,7 +5,9 @@ VisualStudioVersion = 17.7.34202.233
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BehavioralPatterns", "BehavioralPatterns", "{F8CE4913-C6D6-4B80-A230-B9607BB7C0D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediatorPattern", "MediatorPattern\MediatorPattern.csproj", "{96458C4C-C999-48F2-8BE1-E5B0E71B551B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediatorPattern", "MediatorPattern\MediatorPattern.csproj", "{96458C4C-C999-48F2-8BE1-E5B0E71B551B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheChainOfResponsibility", "TheChainOfResponsibility\TheChainOfResponsibility.csproj", "{F072B2E6-576E-4516-91CF-5D7E30081979}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,12 +19,17 @@ Global
 		{96458C4C-C999-48F2-8BE1-E5B0E71B551B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{96458C4C-C999-48F2-8BE1-E5B0E71B551B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{96458C4C-C999-48F2-8BE1-E5B0E71B551B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F072B2E6-576E-4516-91CF-5D7E30081979}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F072B2E6-576E-4516-91CF-5D7E30081979}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F072B2E6-576E-4516-91CF-5D7E30081979}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F072B2E6-576E-4516-91CF-5D7E30081979}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{96458C4C-C999-48F2-8BE1-E5B0E71B551B} = {F8CE4913-C6D6-4B80-A230-B9607BB7C0D5}
+		{F072B2E6-576E-4516-91CF-5D7E30081979} = {F8CE4913-C6D6-4B80-A230-B9607BB7C0D5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1FE9F79A-88C5-4C5F-B407-3F6192615C74}
